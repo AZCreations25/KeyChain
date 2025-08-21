@@ -166,10 +166,10 @@
   <div class="product">
     <img src="S Keychain With Shamami Name.jpg" alt="Product">
     <h3>Personalised Keychain</h3>
-    <p>₹130</p>
+    <p>₹140</p>
     QTY:<input type="number" id="qtyC" value="1" min="1" style="width: 25px;">
-    <button class="btn" onclick="addToCart('Personalised Keychain', 130, parseInt(document.getElementById('qtyC').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Personalised Keychain', 130, parseInt(document.getElementById('qtyC').value))">Order</button>
+    <button class="btn" onclick="addToCart('Personalised Keychain', 140, parseInt(document.getElementById('qtyC').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Personalised Keychain', 140, parseInt(document.getElementById('qtyC').value))">Order</button>
   </div>
     <!-- 5th Product: Letter Initial KeyChain -->
 <div class="product">
@@ -186,7 +186,7 @@
 <div class="product">
   <img src="Keychain With Name.jpg" alt="Product">
   <h3 id="productNameWithName">Keychain With Name</h3>
-  <p>₹130</p>
+  <p>₹140</p>
   QTY:<input type="number" id="qtyName" value="1" min="1" style="width: 25px;">
   <input type="text" id="inputName" placeholder="Enter name" maxlength="20" style="width: 80px;">
   <button class="btn" onclick="addNameKeychainToCart()">Add to Cart</button>
@@ -286,7 +286,7 @@ function addNameKeychainToCart() {
   const customName = `${baseName} (${name})`;
   document.getElementById('productNameWithName').textContent = customName;
 
-  cart.push({ product: customName, price: 130, quantity: qty });
+  cart.push({ product: customName, price: 140, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -302,7 +302,7 @@ function orderNameKeychain() {
   }
 
   const customName = `${baseName} (${name})`;
-  currentSingleProduct = { product: customName, price: 130, quantity: qty };
+  currentSingleProduct = { product: customName, price: 140, quantity: qty };
   togglePopup('singleOrderPopup');
 }
 
